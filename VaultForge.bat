@@ -1,8 +1,5 @@
 @echo off
-where python >nul 2>nul || (
-  echo Python is not installed. Get it from https://python.org/downloads
-  echo and tick "Add Python to PATH" during setup, then run this again.
-  pause & exit /b
-)
-python "%~dp0VaultForge_Windows.py"
+REM VaultForge desktop launcher (Windows). Needs Python 3 from python.org.
+cd /d "%~dp0"
+python VaultForge_Desktop.py %*
 if errorlevel 1 pause
