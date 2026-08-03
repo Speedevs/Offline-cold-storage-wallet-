@@ -13,8 +13,6 @@ Android apps declare **zero permissions** (no `INTERNET`); the web/desktop GUIs 
 network calls. Anyone with your seed owns the funds — there is no reset — so treat every
 step as if it matters, because it does.
 
-> ⚠️ **Unaudited hobby software.** Test with a throwaway seed, confirm the addresses against
-> another wallet, and keep independent paper backups before trusting it with real value.
 
 ---
 
