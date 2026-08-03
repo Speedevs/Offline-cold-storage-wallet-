@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SeedForge Android manifest.
+
+  SECURITY: This app intentionally requests NO permissions at all — in
+  particular there is NO <uses-permission android:name="android.permission.INTERNET"/>.
+  Without the INTERNET permission the Android sandbox forbids the process from
+  opening any network socket, so the app is offline by construction and cannot
+  exfiltrate a generated seed phrase. Do not add network permissions.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.speedevs.seedforge"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34" />
+
+    <application
+        android:label="SeedForge"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:allowBackup="false"
+        android:hasFragileUserData="false"
+        android:theme="@android:style/Theme.Material.NoActionBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

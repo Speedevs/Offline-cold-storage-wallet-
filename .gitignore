@@ -1,0 +1,42 @@
+# ============================================================
+#  SECRETS — never commit these. A public repo is forever.
+#  (gitignore note: comments must be on their own line, never
+#   inline after a pattern, or the pattern silently breaks.)
+# ============================================================
+*.vlk
+*.seed
+seed.txt
+seed*.txt
+mnemonic.txt
+*mnemonic*
+shares.txt
+*share*.txt
+*.wif
+*.key
+*.priv
+secrets/
+private/
+
+# Android signing keys — leaking these lets anyone ship as "you"
+*.keystore
+*.jks
+keystore.properties
+
+# ============================================================
+#  Build artifacts — publish binaries via GitHub Releases,
+#  not committed to the repo history.
+# ============================================================
+/dist/
+*.o
+*.class
+*.apk
+SeedForge-Wallet-*
+SeedForge-linux-*
+SeedForge-macos-*
+SeedForge-windows-*
+/sfw
+
+# Go / editor noise
+/vendor/
+.DS_Store
+*.swp
